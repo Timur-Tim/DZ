@@ -1,0 +1,15 @@
+D:\MyGit\c#work\dz\Dz1\bin\Debug\net6.0\Dz1.exe
+D:\MyGit\c#work\dz\Dz1\bin\Debug\net6.0\Dz1.deps.json
+D:\MyGit\c#work\dz\Dz1\bin\Debug\net6.0\Dz1.runtimeconfig.json
+D:\MyGit\c#work\dz\Dz1\bin\Debug\net6.0\Dz1.dll
+D:\MyGit\c#work\dz\Dz1\bin\Debug\net6.0\Dz1.pdb
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.csproj.AssemblyReference.cache
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.AssemblyInfoInputs.cache
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.AssemblyInfo.cs
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.csproj.CoreCompileInputs.cache
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.dll
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\refint\Dz1.dll
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.pdb
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\Dz1.genruntimeconfig.cache
+D:\MyGit\c#work\dz\Dz1\obj\Debug\net6.0\ref\Dz1.dll

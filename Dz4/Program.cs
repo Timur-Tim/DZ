@@ -24,25 +24,35 @@
 // 82 -> 10
 // 9012 -> 12
 
-Console.WriteLine("Введите целое число");
-int x = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите целое число");
+// int x = Convert.ToInt32(Console.ReadLine());
 
-void SumNumber (int x)
-{
-    int razryad = 1;
-    while (x % 10 > 0)
-    {
-        razryad ++;
-        x/=10;
-    
-    for (int i = 1; i <= razryad; i=i*i) Console.WriteLine(i);
-    }
-    
-}
-SumNumber(x);
+
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов с клавиатуры и выводит массив на экран.
 
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33
+
+
+int[] array = new int[8];
+void UserArray ( int[] array)
+{
+    for (int i = 0; i < 8; i++)
+    {
+        Console.Write($"Введите число массива с индексом {i}: ");
+        array [i] = Convert.ToInt32(Console.ReadLine());
+    }
+    Console.Write("Получается массив: ");
+    Console.Write(array[0] +" ");
+    Console.Write(array[1] +" ");
+    Console.Write(array[2] +" ");
+    Console.Write(array[3] +" ");
+    Console.Write(array[4] +" ");
+    Console.Write(array[5] +" ");
+    Console.Write(array[6] +" ");
+    Console.Write(array[7] +" ");
+}
+UserArray(array);
+

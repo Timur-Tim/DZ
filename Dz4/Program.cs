@@ -24,9 +24,23 @@
 // 82 -> 10
 // 9012 -> 12
 
-// Console.WriteLine("Введите целое число");
-// int x = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите целое число");
+int x = Convert.ToInt32(Console.ReadLine());
 
+int SumNumber(int x)
+{
+    
+    int y = 0;
+    while (x > 0)
+    {
+        int i = x % 10;
+        x = x / 10;
+        y = y + i;
+    }
+    return y;
+}
+int result = SumNumber(x);
+Console.WriteLine(result);
 
 
 
@@ -36,23 +50,15 @@
 // 6, 1, 33 -> [6, 1, 33
 
 
-int[] array = new int[8];
-void UserArray ( int[] array)
-{
-    for (int i = 0; i < 8; i++)
-    {
-        Console.Write($"Введите число массива с индексом {i}: ");
-        array [i] = Convert.ToInt32(Console.ReadLine());
-    }
-    Console.Write("Получается массив: ");
-    Console.Write(array[0] +" ");
-    Console.Write(array[1] +" ");
-    Console.Write(array[2] +" ");
-    Console.Write(array[3] +" ");
-    Console.Write(array[4] +" ");
-    Console.Write(array[5] +" ");
-    Console.Write(array[6] +" ");
-    Console.Write(array[7] +" ");
-}
-UserArray(array);
+// int[] array = new int[8];
+// void UserArray ( int[] array)
+// {
+//     for (int i = 0; i < 8; i++)
+//     {
+//         Console.Write($"Введите число массива с индексом {i}: ");
+//         array [i] = Convert.ToInt32(Console.ReadLine());
+//     }
+//     Console.Write($"Получается массив: {array[0]}, {array[1]}, {array[2]}, {array[3]}, {array[4]}, {array[5]}, {array[6]}, {array[7]} ");
+// }
+// UserArray(array);
 

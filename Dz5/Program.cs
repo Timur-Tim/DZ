@@ -78,3 +78,20 @@
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
+Console.WriteLine("Введите размер массива");
+double size = Convert.ToDouble(Console.ReadLine());
+double[] array = new double[size];
+
+
+double[] FillArray(double size)
+
+{
+    double[] array = new double[size];
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(1, 100);
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+    return array;
+}

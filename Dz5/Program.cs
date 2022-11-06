@@ -69,7 +69,7 @@
 //         }
 //         Console.WriteLine(x);
 //     return x;
-    
+
 // }
 // int[] numbers = FillArray(size);
 // EvenArray(numbers);
@@ -79,19 +79,37 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
 Console.WriteLine("Введите размер массива");
-double size = Convert.ToDouble(Console.ReadLine());
-double[] array = new double[size];
+int size = Convert.ToInt32(Console.ReadLine());
 
-
-double[] FillArray(double size)
-
+double[] FillArray(int size, int minValue, int maxValue)
 {
-    double[] array = new double[size];
+    double[] res = new double[size];
     for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(1, 100);
-        Console.Write($"{array[i]} ");
+        res[i] = new Random().Next(minValue, maxValue + 1);
+        double number;
+        Random rnd = new Random();
+        number = rnd.NextDouble();
+        res[i] = res[i] * number;
+        res[i] = Math.Round(res[i], 2);
+        Console.Write($"{res[i]} ");
     }
-    Console.WriteLine();
-    return array;
+    return res;
 }
+double ResArray(double[] size)
+{
+    double max = size[0];
+    double min = size[0];
+    double sum = 0;
+    for (int i = 1; i < size.Length; i++)
+    {
+        if (size[i] > max) max = size[i];
+        if (size[i] < min) min = size[i];
+    }
+    sum = max - min;
+    Console.Write($"Разница между максимальным {max} и минимальным {min} будет{sum}");
+    return sum;
+}
+
+double[] numbers = FillArray(size, 1, 100);
+double diff = ResArray(numbers);

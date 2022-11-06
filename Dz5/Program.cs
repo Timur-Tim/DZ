@@ -101,7 +101,7 @@ double ResArray(double[] size)
     double max = size[0];
     double min = size[0];
     double sum = 0;
-    for (int i = 1; i < size.Length; i++)
+    for (int i = 0; i < size.Length; i++)
     {
         if (size[i] > max) max = size[i];
         if (size[i] < min) min = size[i];

@@ -4,39 +4,39 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-Console.WriteLine("Введите количество строк");
-int m = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите количество столбцов");
-int n = Convert.ToInt32(Console.ReadLine());
-double[,] array = new double[m, n];
+// Console.WriteLine("Введите количество строк");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов");
+// int n = Convert.ToInt32(Console.ReadLine());
+// double[,] array = new double[m, n];
 
-double[,] FillArray(double[,] array)
-{
+// double[,] FillArray(double[,] array)
+// {
 
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = Convert.ToDouble(new Random().Next(-30, 30));
-        }
-    }
-    return array;
-}
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             array[i, j] = Convert.ToDouble(new Random().NextDouble()*100);
+//         }
+//     }
+//     return array;
+// }
 
-void PrintArray(double[,] image)
-{
-    for (int i = 0; i < image.GetLength(0); i++)
-    {
-        for (int j = 0; j < image.GetLength(1); j++)
-        {
-            Console.Write($"{image[i, j]} \t");
-        }
-        Console.WriteLine();
-    }
-}
+// void PrintArray(double[,] image)
+// {
+//     for (int i = 0; i < image.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < image.GetLength(1); j++)
+//         {
+//             Console.Write($"{image[i, j]} \t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
-double[,] mas = FillArray(array);
-PrintArray(mas);
+// double[,] mas = FillArray(array);
+// PrintArray(mas);
 
 
 // Задача 50. Напишите программу, которая на вход принимает значение элемента в двумерном массиве, и возвращает позицию этого элемента или же указание, что такого элемента нет.
